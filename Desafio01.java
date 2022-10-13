@@ -1,0 +1,28 @@
+
+package projetos;
+
+public class Desafio01 {
+// Fazer uma matriz triangular que imprimima
+ /*
+    0
+    01
+    012
+    013
+    01234
+    012345
+    */   
+    
+    public static void main(String[] args) {
+        for (int linha = 0; linha < 5; linha++) {
+            for (int coluna = 0; coluna < 5; coluna++) {
+                
+                if ( coluna > linha ){
+                    break;
+                }
+                System.out.print(coluna + "  ");
+            }
+            System.out.println("");
+        }
+    }
+    
+}
